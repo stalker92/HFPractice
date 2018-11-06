@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProblemCTest.cs" />
     <Compile Include="ProblemETest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,17 +57,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProblemC\ProblemC\ProblemC.csproj">
-      <Project>{A214ACDA-E54F-43F3-9747-D700D16F2DAD}</Project>
-      <Name>ProblemC</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ProblemD\ProblemD\ProblemD.csproj">
-      <Project>{741583f0-beb1-4463-9081-b72897ee090b}</Project>
-      <Name>ProblemD</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ProblemE\ProblemE\ProblemE.csproj">
       <Project>{62DC4694-5C0F-4035-B7AC-578DBCF0A615}</Project>
       <Name>ProblemE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProblemC\ProblemC.csproj">
+      <Project>{496BF7E7-AD8C-4501-B096-030AF43F121E}</Project>
+      <Name>ProblemC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
